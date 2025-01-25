@@ -199,6 +199,22 @@ vim.keymap.set('n', '<leader>y', '"+y', { desc = 'Yank to system clipboard' })
 vim.keymap.set('v', '<leader>y', '"+y', { desc = 'Yank to system clipboard' })
 vim.keymap.set('n', '<leader>Y', '"+Y', { desc = 'Yank to system clipboard' })
 
+-- [[ BarBar keymaps ]]
+vim.keymap.set('n', '<A-,>', '<cmd>BufferPrevious<CR>', { desc = 'move to previous tab' })
+vim.keymap.set('n', '<A-.>', '<cmd>BufferNext<CR>', { desc = 'move to next tab' })
+-- Pin/unpin buffer
+vim.keymap.set('n', '<A-p>', '<Cmd>BufferPin<CR>', { desc = '' })
+-- Close buffer
+vim.keymap.set('n', '<A-c>', '<Cmd>BufferClose<CR>', { desc = '' })
+-- Magic picker
+vim.keymap.set('n', '<C-p>', '<Cmd>BufferPick<CR>', { desc = 'Magic pick buffer to switch to' })
+vim.keymap.set('n', '<C-s-p>', '<Cmd>BufferPickDelete<CR>', { desc = 'Magic pick buffer to close' })
+-- Sort automatically by...
+vim.keymap.set('n', '<leader>bb', '<Cmd>BufferOrderByBufferNumber<CR>', { desc = 'Sort buffers by buffer number' })
+vim.keymap.set('n', '<leader>bn', '<Cmd>BufferOrderByName<CR>', { desc = 'Sort buffers by name' })
+vim.keymap.set('n', '<leader>bd', '<Cmd>BufferOrderByDirectory<CR>', { desc = 'Sort buffers by directory' })
+vim.keymap.set('n', '<leader>bl', '<Cmd>BufferOrderByLanguage<CR>', { desc = 'Sort buffers by language' })
+vim.keymap.set('n', '<leader>bw', '<Cmd>BufferOrderByWindowNumber<CR>', { desc = 'Sort buffers by window number' })
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
