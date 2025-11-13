@@ -27,8 +27,8 @@ return {
     opts = {
       default_map = true, -- Default mapping <F1> in normal mode.
       auto_update = true, -- Update header when saving.
-      user = 'marvin', -- Your user.
-      mail = 'marvin@42.fr', -- Your mail.
+      user = 'mcutura', -- Your user.
+      mail = 'mcutura@student.42berlin.de', -- Your mail.
       -- add other options.
     },
     config = function(_, opts)
